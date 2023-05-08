@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+
+<!-- Inicio -->
+<body>
+    <div class="contenedor-header">
+        
+        <header>
+            <div class="logo">
+                <a>A <a class="titulo">B</a></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido">
+                <div style="display: flex; margin: 10%;" class="titulos">
+                    <h1 style="display: flex; flex-direction: column;margin-right: 2%;">Soy </h1>
+                    <h1 style="color: #6FB98F; display: flex; flex-direction: row;margin-right: 2%;" class="titulo1">Adrian</h1>
+                    <h1 style="display: flex; flex-direction: row;"class="titulo2">Balbin</h1>
+                </div>
+                <div class="cuerpo">
+                    <p style="margin: 10%;">Estudiante de ingenieria mecatronica, con asignaturas enfocadas al diseño mecanico, programacion y electronica. </p>
+                </div>
+            </div>
+            <div style="padding:2%"class="titulo2" class="img">
+                <img src="img/img1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <h2>Sobre Mí</h2>
+        <div class="Sobremy">
+            <div class="contenido-seccion">
+                <div class="imagen">
+                    <img src="img/img2.PNG" alt="">
+                </div>
+            </div>
+    
+            <div class="contenido">
+                <p style="margin: 10%;">Me emociona aprender de las nuevas tecnologias y, por ello, estoy constantemente actualizando mis conocimentos en las nuevas tendencias tecnologicas.</p>
+            </div>
+        </div>
+        <h2></h2>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="skills" id="skills">
+        <h2>Habilidades</h2>
+        <div class="contenido-seccion">
+            <div class="fila">
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación Efectiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="img/img2.PNG">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Su Nombre">
+                    <input type="text" placeholder="Su Número telefónico">
+                    <input type="text" placeholder="Su Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje
+                    </button>
+                </div>
+                <!-- Lugar -->
+                <div class="imagen">
+                    <img src="img/img4.PNG">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
